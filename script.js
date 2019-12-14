@@ -22,11 +22,11 @@ function MakeBurgerMenu() {
         if (menuIsOpen == false) {
             menuIsOpen = true;
             items.style.display = "flex";
-            //menu.querySelector("img").src = src = "images/burger_close.png";
+            menu.src = src = "files/images/iconmonstr-x-mark-2.svg";
         } else {
             menuIsOpen = false;
             items.style.display = "none";
-            //menu.querySelector("img").src = src = "images/iconmonstr-menu-1.svg";
+            menu.src = src = "files/images/iconmonstr-menu-1.svg";
         }
     })   
 }

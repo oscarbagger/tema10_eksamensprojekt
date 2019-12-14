@@ -1,3 +1,11 @@
+
+:root {
+    --color-sand: #eeeade;
+    --color-white: #f9f9f9;
+    --color-grey: #4a4a4a;
+    --color-black: #3b3b3b;
+}
+
 * {
     margin: 0;
 }
@@ -6,38 +14,94 @@ img {
     width: 100%;
 }
 
+body {
+    background-color: var(--color-white);
+}
 
 /**********************/
 /* Text */
 /**********************/
 
+h1 {
+    font-size: 3rem;
+}
 
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
 ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
 
-
+button {
+    background-color: var(--color-black);
+    border:0px;
+    height: 12vh;
+    width: 50vw;
+    font-size: 2rem;
+    color: var(--color-white);
+}
+button:hover {
+    cursor: pointer;
+}
 
 /**********************/
 /* Header */
 /**********************/
 
 header {
-    background-color: gray;
+    background-color:  var(--color-sand);
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    padding: 5px 10px 0px 10px;
+}
+
+header nav {
+    display: flex;
+}
+
+.burger {
+    width: 8vw;
+    height: 7vh;
+    position: relative;
+    padding: 5px 20px 0px 0px;
 }
 
 .menuItems {
     display: none;
     flex-direction: column;
-    text-align: center;
     position: fixed;
-    left: 0;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: var(--color-sand);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.menuItems li {
+    padding: 6px;
 }
 
 
@@ -46,13 +110,28 @@ header {
 /**********************/
 
 footer {
-    background-color: antiquewhite;
+    background-color: var(--color-sand);
+    text-align: center;
 }
 
-.burger {
-    width: 8vw;
-    height: 7vh;
+.footerMenu {
+    display: none;
 }
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+}
+.footerLinks img {
+    width: 20vw;
+}
+
+/**********************/
+/* Animation */
+/**********************/
+
 
 
 /**********************/
@@ -61,18 +140,13 @@ footer {
 
 
 @media only screen and (min-width: 800px) {
-    .burger {
+    .burgerMenu {
         display: none;
     }
     .menuItems {
         display: flex;
         flex-direction: row;
-        justify-content: center
-        text-align: center;
-        width: auto;
-        height: auto;
         position: relative;
-        background-color: none;
     }
 }
 
