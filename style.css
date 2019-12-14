@@ -18,24 +18,36 @@ body {
     background-color: var(--color-white);
 }
 
+main {
+    padding-top: 70px;
+}
+
+section {
+    padding: 0px 15px 0px 15px;
+}
+
 /**********************/
 /* Text */
 /**********************/
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
     font-size: 1rem;
+    margin: 2px;
 }
 ul {
     display: flex;
@@ -51,8 +63,9 @@ a {
 button {
     background-color: var(--color-black);
     border:0px;
-    height: 12vh;
+    height: 9vh;
     width: 50vw;
+    padding: 10px;
     font-size: 2rem;
     color: var(--color-white);
 }
@@ -79,11 +92,14 @@ header nav {
     display: flex;
 }
 
+.burgerMenu {
+    position: absolute;
+    right: 0px;
+    padding: 10px 20px 0px 0px;
+}
+
 .burger {
-    width: 8vw;
-    height: 7vh;
-    position: relative;
-    padding: 5px 20px 0px 0px;
+    width: 10vw;
 }
 
 .menuItems {
@@ -102,6 +118,10 @@ header nav {
 
 .menuItems li {
     padding: 6px;
+}
+
+.menuItems li:nth-child(1) {
+    padding-top: 70px;
 }
 
 
@@ -124,8 +144,61 @@ footer {
     padding: 10px;
     align-items: center;
 }
-.footerLinks img {
-    width: 20vw;
+
+.icon {
+    width: 12vw;
+    justify-self:center;
+}
+
+/**********************/
+/* Homepage */
+/**********************/
+
+.splash {
+    position: relative;
+    z-index: -1;
+}
+
+.splash button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#portfolio button{
+    width: 100%;
+    margin: 2px 0px 20px 0px;
+}
+
+/**********************/
+/* Drawings page */
+/**********************/
+
+.menuArrow {
+    width: 8vw;
+}
+
+/**********************/
+/* Contact page */
+/**********************/
+
+.contactInfo {
+    border: 1px solid var(--color-black);
+    padding: 10px;
+}
+form {
+    width: 80vw;
+}
+
+form input {
+    background-color: var(--color-sand);
+    width: 100%;
+}
+
+form textarea {
+    background-color: var(--color-sand);
+    width: 100%;
+    word-break: break-word;
 }
 
 /**********************/

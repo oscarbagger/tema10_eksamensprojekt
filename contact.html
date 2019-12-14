@@ -7,7 +7,21 @@
         <title>Document</title>
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a> 
+                <ul class="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="drawings.html">Drawings</a></li>
+                    <li><a href="comission.html">Comissions</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>     
+                </ul>
+                <div class="burgerMenu">
+                    <img src="files/images/iconmonstr-menu-1.svg" alt="burger" class="burger">
+                </div>
+            </nav>
+        </header>
         <main>
           <section>
               <h1>Contact me</h1>
@@ -16,11 +30,11 @@
                   <p>Don't hesitate: Get in touch and I'll get back to you as soon as possible.
                       Exhibitions, Private lessons, illustration or commission work etc.</p>
                     <div>
-                        <img src="" alt="">
+                        <img src="files/images/iconmonstr-phone-6.svg" alt="phone" class="icon">
                         <p>Phone</p>
                     </div>
                   <div>
-                      <img src="" alt="">
+                      <img src="files/images/iconmonstr-email-1.svg" alt="email" class="icon">
                       <p>Email</p>
                   </div>
               </div>
@@ -35,13 +49,30 @@
                   <p>Subject</p>
                   <input type="text" name="subject">
                   <p>Message*</p>
-                  <input type="text" name="messsage">
+                  <!--<input type="text" name="messsage"> --->
+                  <textarea name="messsage" cols="40" rows="5"></textarea>
                   <input type="submit" value="submit">
                   <p>* Required</p>
               </form>
           </section>
 
         </main>
-        <footer></footer>
+        <footer>
+            <a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a> 
+            <ul class=footerMenu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drawings.html">Drawings</a></li>
+                <li><a href="comission.html">Comissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a>  </li>     
+            </ul>
+            <div class="footerLinks">
+                <img src="files/images/iconmonstr-phone-6.svg" alt="phone" class="icon">
+                <img src="files/images/iconmonstr-instagram-11.svg" alt="instagram" class="icon">
+                <img src="files/images/iconmonstr-email-1.svg" alt="email" class="icon">
+            </div>
+            <p>Line Engelhardt, 2019</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
