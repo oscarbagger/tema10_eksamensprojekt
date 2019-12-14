@@ -9,11 +9,11 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a> 
+                <a class="logo" href="index.html"><img src="files/images/logo-website.png" alt="logo"></a> 
                 <ul class="menuItems">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="drawings.html">Drawings</a></li>
-                    <li><a href="comission.html">Comissions</a></li>
+                    <li><a href="comission.html">Comission work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>     
                 </ul>
@@ -29,11 +29,11 @@
                   <h3>Contact info</h3>
                   <p>Don't hesitate: Get in touch and I'll get back to you as soon as possible.
                       Exhibitions, Private lessons, illustration or commission work etc.</p>
-                    <div>
+                    <div class="contactDetail">
                         <img src="files/images/iconmonstr-phone-6.svg" alt="phone" class="icon">
                         <p>Phone</p>
                     </div>
-                  <div>
+                  <div  class="contactDetail">
                       <img src="files/images/iconmonstr-email-1.svg" alt="email" class="icon">
                       <p>Email</p>
                   </div>
@@ -51,8 +51,10 @@
                   <p>Message*</p>
                   <!--<input type="text" name="messsage"> --->
                   <textarea name="messsage" cols="40" rows="5"></textarea>
-                  <input type="submit" value="submit">
-                  <p>* Required</p>
+                  <div class="formBottom">
+                      <p>* Required</p>
+                      <input class="submitForm" type="submit" value="Submit">
+                  </div>
               </form>
           </section>
 
