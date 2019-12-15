@@ -23,8 +23,8 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="top">
+        <main id="drawings">
+            <section>
             <h1>Drawings</h1>
             <p>Divides into two major groups: Pure fantasy and all sort of studies from life. In the second group you can make another distinction in the amount of time from sketches to longstudies</p>            
             </section>
@@ -34,22 +34,7 @@
                        <h2>Classical longstudies</h2>
                        <img src="files/images/arrow_down.svg" alt="arrowDown" class="menuArrow"> 
                    </div>
-                    <div class="gridView">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="listDrawings">
-                    <div class="drawingsHeader">
-                        <h2>Live drawing sessions</h2>
-                        <img src="files/images/arrow_down.svg" alt="arrowDown" class="menuArrow"> 
-                    </div>
-                    <div class="gridView">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
+                    <div class="gridView" id="classic">
                     </div>
                 </div>
                 <div class="listDrawings">
@@ -57,22 +42,32 @@
                         <h2>Personal projects</h2>
                         <img src="files/images/arrow_down.svg" alt="arrowDown" class="menuArrow"> 
                     </div>
-                    <div class="gridView">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
-                        <img src="files/images/portrait.jpg" alt="img">
+                    <div class="gridView" id="personal">
                     </div>              
+                </div>
+                <div class="listDrawings">
+                    <div class="drawingsHeader">
+                        <h2>Live drawing sessions</h2>
+                        <img src="files/images/arrow_down.svg" alt="arrowDown" class="menuArrow"> 
+                    </div>
+                    <div class="gridView" id="live">
+                    </div>
                 </div>
             </section>
         </main>
+        <template>
+            <div>
+                <img src="" alt="">
+                <p class="drawingTitle"></p>
+                <p class="drawingText"></p>
+            </div>
+        </template>
         <footer>
             <a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a> 
             <ul class=footerMenu>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="drawings.html">Drawings</a></li>
-                <li><a href="comission.html">Comissions</a></li>
+                <li><a href="comission.html">Comission work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a>  </li>     
             </ul>
