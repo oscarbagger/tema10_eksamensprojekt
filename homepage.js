@@ -22,6 +22,8 @@ async function GetSplash()
     let homepageList = await response.json();
     splashList=homepageList[0].splash;
     console.log(splashList);
+    splashImg.src=splashList[splashIndex].guid;
+    
     splashAmount=splashList.length;
     // start udskiftning
     setTimeout(ChangeSplash, timer);

@@ -14,9 +14,29 @@ const lists= document.querySelectorAll(".listDrawings")
 function Start()
 {
     GetJson();
-    ActivateArrows();
+    lists.forEach( list => {
+        let arrow=list.querySelector(".menuArrow");
+        let grid=list.querySelector(".gridView");
+        arrow.alt="arrowUp";
+        arrow.src= "files/images/arrow_up.svg"; 
+    })
+    CheckIfDesktop();
 }
-
+                      
+function CheckIfDesktop()
+{
+    console.log(window.screen.width);
+    if (window.screen.width>800 )   
+    {
+        lists.forEach( list => {
+            let arrow=list.querySelector(".menuArrow");
+            let grid=list.querySelector(".gridView");
+            grid.style.display = "flex";
+            arrow.alt="arrowDown";
+            arrow.src= "files/images/arrow_down.svg"; 
+        })
+    }       
+}
 
 async function GetJson() {
     const response = await fetch(drawingUrl);
@@ -33,7 +53,6 @@ function ShowDrawings() {
         clone.querySelector("img").alt = draw.title.rendered;
         clone.querySelector(".drawingTitle").textContent =draw.title.rendered;
         clone.querySelector(".drawingText").textContent =draw.beskrivelse;
-        console.log(draw.kategori);
         switch(draw.kategori[0])
             {
                 case "Classical longstudies":
@@ -50,10 +69,8 @@ function ShowDrawings() {
                     break;
             }
     })
+    ActivateArrows();
 }
-
-
-
 
 function ActivateArrows()
 {
@@ -62,12 +79,18 @@ function ActivateArrows()
         let grid=list.querySelector(".gridView");
         arrow.addEventListener("click", () => {
             if (arrow.alt=="arrowUp") {
-                if (window.screen.width<800)
-                {grid.style.display = "grid";}
-                else {grid.style.display = "flex";}
                 arrow.alt="arrowDown";
                 arrow.src= "files/images/arrow_down.svg";
-            } else {
+                if (window.screen.width<800)
+                {
+                    grid.style.display = "grid";
+                }
+                else {
+                    grid.style.display = "flex";
+                }
+            } 
+            else 
+            {
                 grid.style.display = "none";
                 arrow.alt="arrowUp";
                 arrow.src= "files/images/arrow_up.svg";
