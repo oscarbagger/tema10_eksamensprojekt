@@ -76,8 +76,28 @@ function ActivateArrows()
 {
     lists.forEach( list => {
         let arrow=list.querySelector(".menuArrow");
+        let headerText=list.querySelector("h2");
         let grid=list.querySelector(".gridView");
         arrow.addEventListener("click", () => {
+            if (arrow.alt=="arrowUp") {
+                arrow.alt="arrowDown";
+                arrow.src= "files/images/arrow_down.svg";
+                if (window.screen.width<800)
+                {
+                    grid.style.display = "grid";
+                }
+                else {
+                    grid.style.display = "flex";
+                }
+            } 
+            else 
+            {
+                grid.style.display = "none";
+                arrow.alt="arrowUp";
+                arrow.src= "files/images/arrow_up.svg";
+            }
+        })
+        headerText.addEventListener("click", () => {
             if (arrow.alt=="arrowUp") {
                 arrow.alt="arrowDown";
                 arrow.src= "files/images/arrow_down.svg";

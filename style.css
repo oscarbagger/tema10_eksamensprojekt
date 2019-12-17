@@ -72,12 +72,13 @@ section {
 /**********************/
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: left;
     color: var(--color-black);
     text-transform: uppercase;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
+    padding-top: 6px;
 }
 
 h2 {
@@ -143,12 +144,13 @@ header {
     background-color:  var(--color-sand);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .logo {
     width: 25%;
     padding: 5px 10px 0px 10px;
+    z-index: 10;
 }
 
 .logo:hover {
@@ -249,11 +251,7 @@ footer {
     z-index: -1;
 }
 .splash button {
-    font-size: 1.2rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 5px;
-    left: 30px;
+    display: none;
 }
 
 #portfolio {
@@ -262,12 +260,11 @@ footer {
 
 #portfolio button{
     width: 100%;
-    margin: 0px 0px 20px 0px;
+    margin: -5px 0px 20px 0px;
 }
 
 #portfolio h2 {
     text-align: center;
-    font-size: 2.5rem;
 } 
 
 /**********************/
@@ -275,13 +272,18 @@ footer {
 /**********************/
 
 .menuArrow {
-    width: 7vw;
+    width: 10vw;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .menuArrow:hover {
     cursor:pointer;
     animation: hoverEmphasis 0.1s ease-in both;
+} 
+
+.drawingsHeader h2:hover {
+    cursor:pointer;
 }
 
 .gridView {
@@ -350,6 +352,10 @@ footer {
     
 }
 
+#contact h1 {
+    padding: 6px 15px 0px 15px;
+}
+
 .contactDetail {
     display: flex;
     align-items:center;
@@ -366,10 +372,13 @@ footer {
     padding-left: 10px;
 }
 
+#form {
+    padding: 0px 15px 0px 15px;
+}
+
 form {
     width: 100%;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 
 form input {
@@ -399,6 +408,7 @@ form textarea {
     height: 9vh;
     padding: 10px;
     font-size: 2rem;
+    margin-top: 10px;
     background-color: var(--color-black);
     color: var(--color-white);
     text-transform: uppercase;
@@ -448,12 +458,45 @@ form textarea {
 }
 
 
+.foldOut{
+    animation-name: foldOut_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+}
+
+.foldIn{
+    animation-name: foldIn_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+}
+
 @keyframes transitionIn_kf {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+@keyframes foldOut_kf {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes foldIn_kf {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
     }
 }
 
@@ -481,8 +524,8 @@ form textarea {
     }
     
     h1 {
-
         text-align: center;
+        padding-top: 0px;
     }
     /**********************/
     /* Header */
@@ -512,6 +555,7 @@ form textarea {
         justify-content: flex-end;
         align-items: center;
         font-size: 1.2rem;
+        padding-right: 25px;
     }
     .menuItems li {
         padding-right: 25px;
@@ -567,7 +611,7 @@ form textarea {
         display:block;
         position: absolute;
         bottom: 180px;
-        left: 190px;
+        left: 12.5%;
         font-size: 3.2rem;
         z-index: 1;
     }
@@ -576,25 +620,33 @@ form textarea {
         display:block;
         position: absolute;
         bottom: 150px;
-        left: 190px;
+        left: 12.5%;
         font-size: 2rem;
         z-index: 1;
     }
     
     .splash button {
-        width: 25vw;
-        font-size: 1.4rem;
+        display:none;
+        width: 20vw;
+        font-size: 1.2rem;
+        position: absolute;
+        z-index: 1;
+        bottom: 5px;
     }
 
     .splash a {
         position: absolute;
         bottom: 20px;
-        left: 160px;
+        left: 12.5%;
     }
     
     #portfolio {
         width: 75%;
     }
+    
+    #portfolio h2 {
+        font-size: 2.5rem;
+    } 
     
     .portfolioButtons{
         /*display: grid;
@@ -635,6 +687,10 @@ form textarea {
     
     #drawings h1 {
         margin-top: 15px;
+    }
+    
+    #drawings section {
+        max-width: 1150px;
     }
     
     .menuArrow {
@@ -749,12 +805,18 @@ form textarea {
 
 @media only screen and (min-width: 1000px) {
     .splash button {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }   
     
     .splash h1 {
         font-size: 4rem;
     }
+}
+
+@media only screen and (min-width: 1150px) {
+    .splash button {
+        font-size: 1.7rem;
+    }   
 }
 
 
