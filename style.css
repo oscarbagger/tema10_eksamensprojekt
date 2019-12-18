@@ -78,7 +78,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    padding-top: 6px;
+    padding-top: 18px;
 }
 
 h2 {
@@ -204,6 +204,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding-bottom: 4px;
+    padding-top: 8px;
 }
 
 .footerMenu {
@@ -255,8 +256,10 @@ footer {
 }
 
 #portfolio {
-    padding-top: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
+
 
 #portfolio button{
     width: 100%;
@@ -265,6 +268,7 @@ footer {
 
 #portfolio h2 {
     text-align: center;
+    padding-bottom: 10px;
 } 
 
 /**********************/
@@ -310,6 +314,9 @@ footer {
 /* Comissions page */
 /**********************/
 
+.comissionTop p {
+    margin-bottom: 10px;
+}
 
 .comissionList p {
     text-align: center;
@@ -324,9 +331,14 @@ footer {
 /* About page */
 /**********************/
 
+#cv h2 {
+    font-size: 1.8rem;
+    padding-top: 8px;
+}
+
 #cv h3 {
     text-align: left;
-    padding-top: 6px;
+    padding: 24px 0px 0px 0px;
 }
 
 .cvList {
@@ -335,12 +347,15 @@ footer {
 } 
 
 #cv li {
-    padding-bottom: 8px;
-    list-style:circle;
+    padding-bottom: 8px;    
 }
 
 .topList {
     display: none;
+}
+
+.exhibition {
+    padding: 0px 0px 10px 0px;
 }
 
 /**********************/
@@ -353,7 +368,7 @@ footer {
 }
 
 #contact h1 {
-    padding: 6px 15px 0px 15px;
+    padding: 18px 15px 0px 15px;
 }
 
 .contactDetail {
@@ -525,7 +540,7 @@ form textarea {
     
     h1 {
         text-align: center;
-        padding-top: 0px;
+        padding-top: 10px;
     }
     /**********************/
     /* Header */
@@ -645,7 +660,8 @@ form textarea {
     }
     
     #portfolio h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        padding-bottom: 20px;
     } 
     
     .portfolioButtons{
@@ -727,13 +743,13 @@ form textarea {
     
     #comission button{
         margin-top: 10px;
-        width: 30%;
+        width: 25%;
     }
     
     .comissionList {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 800px;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -755,10 +771,15 @@ form textarea {
         margin-top: 15px;
         /*grid-column: 1/ span 2; */
     }
+    #cv h2 {
+        font-size: 2rem;
+        padding-top: 0px;
+    }
     
     #cv {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
         /* grid-column: 1/ span 2; */ 
     }
     
@@ -797,8 +818,10 @@ form textarea {
     }
     
     .submitForm {
-        width: 70%;
-        height: 8vh;
+        width: 50%;
+        height: 6vh;
+        font-size: 1.4rem;
+        font-family: 'Libre Baskerville', serif;
     }
     
 }
