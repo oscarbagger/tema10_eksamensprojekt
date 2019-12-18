@@ -406,7 +406,7 @@ form input {
 form textarea {
     background-color: var(--color-sand);
     width: 100%;
-    word-break: break-word;
+    word-break:break-all;
     color: var(--color-black);
     font-family: 'Inter';
 }
@@ -445,9 +445,8 @@ form textarea {
 
 @keyframes hoverHighlight{
     0% {
-        box-shadow: 0px;
+        box-shadow: 0px 0px 0px black;
     }
-
     100% {
         box-shadow: 2px 3px 2px black;
     }

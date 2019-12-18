@@ -44,6 +44,13 @@ async function GetSplash()
     setTimeout(ChangeSplash, timer);
 }
 
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+    return img;
+}
+
 function ChangeSplash() {
     
     prevSplash.src=splashImgList[splashIndex].src;
@@ -58,12 +65,4 @@ function ChangeSplash() {
         splashImg.classList.remove("transitionIn");
     })
     setTimeout(ChangeSplash, timer);
-}
-
-
-function preloadImage(url)
-{
-    var img=new Image();
-    img.src=url;
-    return img;
 }
