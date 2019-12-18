@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-        <link rel='shortcut icon' type='image/x-icon' href="files/images/favicon.ico" />
-        <title>Drawings</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a class="logo" href="index.html"><img src="files/images/logo-website.png" alt="logo"></a> 
-                <ul class="menuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="drawings.html">Drawings</a></li>
-                    <li><a href="comission.html">Comission work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>     
-                </ul>
-                <div class="burgerMenu">
-                    <img src="files/images/iconmonstr-menu-1.svg" alt="burger" class="burger">
-                </div>
-            </nav>
-        </header>
-        <main id="drawings">
-            <section>
-            <h1>Drawings</h1>          
-            </section>
-            <section class="lists">
-                <div class="listDrawings">
-                    <div class="drawingsHeader">
-                       <h2>Classical longstudies</h2>
-                       <img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow"> 
-                   </div>
-                    <div class="gridView" id="classic">
-                    </div>
-                </div>
-                <div class="listDrawings">
-                    <div class="drawingsHeader">
-                        <h2>Personal projects</h2>
-                        <img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow"> 
-                    </div>
-                    <div class="gridView" id="personal">
-                    </div>              
-                </div>
-                <div class="listDrawings">
-                    <div class="drawingsHeader">
-                        <h2>Live drawing sessions</h2>
-                        <img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow"> 
-                    </div>
-                    <div class="gridView" id="live">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <template>
-            <div>
-                <img src="" alt="">
-                <p class="drawingTitle"></p>
-                <p class="drawingText"></p>
-            </div>
-        </template>
-        <footer>
-            <a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a> 
-            <ul class=footerMenu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
-                <li><a href="comission.html">Comission work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a>  </li>     
-            </ul>
-            <div class="footerLinks">
-                <a href="tel:+45 60 81 21 90"><img src="files/images/iconmonstr-phone-6.svg" alt="phone" class="icon"></a>
-                <a  href="https://www.instagram.com/angelridinghard/"><img src="files/images/iconmonstr-instagram-11.svg" alt="instagram" class="icon"></a>
-                <a  href="mailto:contact@lineline.nu"><img src="files/images/iconmonstr-email-1.svg" alt="email" class="icon"></a>
-            </div>
-            <p>© Line Engelhardt, 2019</p>
-        </footer>
-        <script src="script.js"></script>
-        <script src="drawings.js"></script>
-    </body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Grethe and Oscar">
+	<meta name="keywords" content="drawings, drawing, tegninger, tegning, illustration, illustrationer, traditionell, arbejd, work, personal">
+	<meta name="description" content="Side for tegninger og illustrationer">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href="files/images/favicon.ico" />
+	<title>Drawings</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="logo" href="index.html"><img src="files/images/logo-website.png" alt="logo"></a>
+			<ul class="menuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="drawings.html">Drawings</a></li>
+				<li><a href="comission.html">Comission work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="burgerMenu">
+				<img src="files/images/iconmonstr-menu-1.svg" alt="burger" class="burger">
+			</div>
+		</nav>
+	</header>
+	<main id="drawings">
+		<section>
+			<h1>Drawings</h1>
+		</section>
+		<section class="lists">
+			<div class="listDrawings">
+				<div class="drawingsHeader">
+					<h2>Classical longstudies</h2>
+					<img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow">
+				</div>
+				<div class="gridView" id="classic">
+				</div>
+			</div>
+			<div class="listDrawings">
+				<div class="drawingsHeader">
+					<h2>Personal projects</h2>
+					<img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow">
+				</div>
+				<div class="gridView" id="personal">
+				</div>
+			</div>
+			<div class="listDrawings">
+				<div class="drawingsHeader">
+					<h2>Live drawing sessions</h2>
+					<img src="files/images/arrow_up.svg" alt="arrowUp" class="menuArrow">
+				</div>
+				<div class="gridView" id="live">
+				</div>
+			</div>
+		</section>
+	</main>
+	<template>
+		<div>
+			<img src="" alt="">
+			<p class="drawingTitle"></p>
+			<p class="drawingText"></p>
+		</div>
+	</template>
+	<footer>
+		<a href="index.html"><img class="logo" src="files/images/logo-website.png" alt="logo"></a>
+		<ul class=footerMenu>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="drawings.html">Drawings</a></li>
+			<li><a href="comission.html">Comission work</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a> </li>
+		</ul>
+		<div class="footerLinks">
+			<a href="tel:+45 60 81 21 90"><img src="files/images/iconmonstr-phone-6.svg" alt="phone" class="icon"></a>
+			<a href="https://www.instagram.com/angelridinghard/"><img src="files/images/iconmonstr-instagram-11.svg" alt="instagram" class="icon"></a>
+			<a href="mailto:contact@lineline.nu"><img src="files/images/iconmonstr-email-1.svg" alt="email" class="icon"></a>
+		</div>
+		<p>© Line Engelhardt, 2019</p>
+	</footer>
+	<script src="script.js"></script>
+	<script src="drawings.js"></script>
+</body>
+
 </html>
